@@ -41,3 +41,22 @@ curl -X 'GET' \
 -H 'accept: application/json'
 ```
 
+## PUT to update specific todo
+
+```
+curl -X 'PUT' \
+'http://127.0.0.1:8080/todo/1' \
+-H 'accept: application/json' \
+-H 'Content-Type: application/json' \
+-d '{
+"item": "Read the next chapter of the book."
+}'
+```
+
+## Delete existing todo
+
+```
+curl -X 'DELETE' \
+'http://127.0.0.1:8080/todo/1' \
+-H 'accept: application/json'
+```
